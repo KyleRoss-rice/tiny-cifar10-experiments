@@ -12,9 +12,6 @@ This simple model is meant to establish a baseline, for comparisons. It is the s
 ![](https://raw.githubusercontent.com/KyleRoss-rice/tiny-cifar10-experiments/main/img/baseline.svg)
 """
 
-import torch
-import torch.nn as nn
-
 class BaselineModel(torch.nn.Module):
     def __init__(self):
         super(Net, self).__init__()
