@@ -38,6 +38,9 @@ class TinyCIFAR10(Dataset):
       self.download(root_dir)
     self.load()
   
+  def __len__(self):
+    return len(self.data)
+
   def __getitem__(self, index):
     data = self.data[index]
     target = self.targets[index]
